@@ -1,0 +1,29 @@
+{
+    "name":"Hostel Finder",
+    "short_name":"FlutApp",
+    "start_url":"./index.html",
+    "display":"standalone",
+    "background_color":"#FFE902",
+    "theme_color":"#FFE902",
+    "orientation":"portrait-primary",
+    "icons":[
+        {
+        "src":"houseIcon.png",
+        "type":"image/png",
+        "sizes":"72x72",
+        "purpose":"any"
+        },
+        {
+        "src":"home.png",
+        "type":"image/png",
+        "sizes":"144x144", 
+        "purpose":"any"
+        },
+        {
+        "src":"home512.png",
+        "type":"image/png",
+        "sizes":"512x512", 
+        "purpose":"maskable"
+        }
+    ]
+}

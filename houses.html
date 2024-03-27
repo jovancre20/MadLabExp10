@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <title>Hostels</title>
+    <script src=
+    "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+     
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                text-align: center;
+            }
+     
+            h1 {
+                color: black;
+            }
+     
+            table {
+                border-collapse: collapse;
+                width: 50%;
+                margin: 20px auto;
+            }
+     
+            th,
+            td {
+                border: 1px solid #dddddd;
+                text-align: left;
+                padding: 8px;
+            }
+        </style>
+</head>
+<body>
+
+   <!-- header -->
+   <div class="container">
+    <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+      <div class="col-md-3 mb-2 mb-md-0">
+        <a class="navbar-brand" href="#"><img src="./backpack-fill.svg" alt="box seam" height="30px"> Hostel Finder</a>
+        <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+          <li><a href="#" class="nav-link px-2 link-dark">Home</a></li>
+          <li><a href="./index.html#feat" class="nav-link px-2 link-secondary">Features</a></li>
+          <li><a href="#" class="nav-link px-2 link-secondary">Pricing</a></li>
+          <li><a href="#" class="nav-link px-2 link-secondary">FAQs</a></li>
+          <li><a href="#" class="nav-link px-2 link-secondary">About</a></li>
+        </ul>
+      </div>
+
+
+<div class="container">
+  <div class="p-4 p-md-5 mb-4 rounded text-body-emphasis bg-body-secondary">
+    <div class="col-lg-6 px-0">
+      <h1 class="display-4 fst-italic">Welcome to hostel finder!!!!</h1>
+      <p class="lead my-3">We have hostels of all places around India and you can use it to find hostels near you or your desire</p>
+      
+    </div>
+  </div>
+</div>
+
+<div class="container">
+<form class="d-flex" role="search">
+  <input class="form-control me-2" type="search" placeholder="Search here" aria-label="Search" id="gfg">
+
+</form>
+</div>
+
+<hr>
+
+
+<!-- <input id="gfg" type="text" placeholder="Search here"> -->
+</b>
+<table>
+    <tr>
+        <th>Name of hostel</th>
+        <th>Type of hostel</th>
+        <th>Location</th>
+        <th>Contact</th>
+    </tr>
+    <tbody id="geeks">
+        <tr>
+            <td>Blue star hostel</td>
+            <td>Boys and Girls</td>
+            <td>Noida , Delhi</td>
+            <td>96451512</td>
+        </tr>
+        <tr>
+          <td>Black Diamant Hostel</td>
+          <td>Girls</td>
+          <td>Andheri ,Mumbai ,Maharastra</td>
+          <td>975211322</td>
+        </tr>
+        <tr>
+          <td>Bliss Hostel</td>
+          <td>Girls</td>
+          <td>Barasat, Kolkata</td>
+          <td>9048545126</td>
+        </tr>
+        <tr>
+          <td>Boss Hostel</td>
+          <td>Boys</td>
+          <td>Churchgate, Mumbai , Maharastra</td>
+          <td>965561325</td>
+        </tr>
+        <tr>
+          <td>Bright Star Hostel</td>
+          <td>Boys and Girls</td>
+          <td>West Bengal, Kolkata</td>
+          <td>96451512</td>
+        </tr>
+        <tr>
+          <td>Cake Hostel</td>
+          <td>Boys and Girls</td>
+          <td>Ambdabad, Gujrat</td>
+          <td>96451512</td>
+        </tr>
+        <tr>
+          <td>Candle Hostel</td>
+          <td>Boys</td>
+          <td>Thiruvananthapuram, Kerela</td>
+          <td>965452452</td>
+        </tr>
+        <tr>
+          <td>Ceasar Hostel</td>
+          <td>Boys and Girls</td>
+          <td>Ayodya, Uttar Pradesh</td>
+          <td>96121522</td>
+        </tr>
+        <tr>
+          <td>Chaos Hostel</td>
+          <td>Boys and Girls</td>
+          <td>Friozpur,Punjab</td>
+          <td>85132612</td>
+        </tr>
+    </tbody>
+</table>
+
+<script>
+    $(document).ready(function () {
+        $("#gfg").on("keyup", function () {
+            var value = $(this).val().toLowerCase();
+            $("#geeks tr").filter(function () {
+                $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+            });
+        });
+    });
+</script>
+
+<script src="/docs/5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="index.js"></script>
+<script src="config.js"></script>
+
+</body>
+</html>
